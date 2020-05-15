@@ -15,6 +15,6 @@ cloudwatch
 s3
 apigateway
 lambda
-route53
 acm
+route53
 ```
