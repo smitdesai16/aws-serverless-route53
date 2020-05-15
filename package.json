@@ -1,0 +1,15 @@
+{
+  "name": "serverless-route53",
+  "version": "1.0.0",
+  "description": "```bash\r serverless deploy -v\r ```\r ## Removal Stack\r ```bash\r serverless remove -v\r ```\r ## Following AWS Service will get affected\r ```bash\r cloudformation\r iam\r cloudwatch\r s3\r apigateway\r lambda\r route53\r acm\r ```",
+  "main": "handler.js",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-domain-manager": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

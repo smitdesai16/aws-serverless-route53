@@ -1,0 +1,27 @@
+service: serverless-route53
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+  memorySize: 128
+  timeout: 1
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /
+          method: get
+
+plugins:
+  - serverless-domain-manager
+
+custom:
+  customDomain:
+    domainName: api.mumbaimob.com
+    basePath: ''
+    stage: ${self:provider.stage}
+    createRoute53Record: true
